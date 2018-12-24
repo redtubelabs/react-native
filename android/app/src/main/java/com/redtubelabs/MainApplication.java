@@ -1,7 +1,7 @@
 package com.redtubelabs;
 
 import android.app.Application;
-
+import com.brentvatne.react.ReactVideoPackage;
 import com.facebook.react.ReactApplication;
 import com.brentvatne.react.ReactVideoPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
