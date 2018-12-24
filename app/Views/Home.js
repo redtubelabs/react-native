@@ -12,9 +12,12 @@ export default class Home extends Component {
   }
 
   fetchData() {
+    let result = null;
     fetch(`https://api-redtube-proxy.mybluemix.net/?search=${this.state.searchWord}`)
       .then(res => res.json())
-      .then(res => console.warn(res))
+      .then(res => {
+        this.props.navigation.navigate('Result', { result: res })
+      });
   }
 
   render() {
@@ -27,6 +30,7 @@ export default class Home extends Component {
             title="Search"
             color={purple}
             accessibilityLabel="Search"
+            // onPress={this.fetchData}
             onPress={this.fetchData}
           />
         </View>
