@@ -15,7 +15,7 @@ class Result extends Component {
       <View style={{ height: 250, backgroundColor: 'white' }}>
         <WebView
           style={{ marginTop: 15, height: 250, width: '100%' }}
-          source={{ uri: `${item.video.embed_url}` }}
+          source={{ html: `<iframe width="560" height="250" src="${item.video.embed_url}" frameborder="0" allowfullscreen></iframe>` }}
         />
       </View>
     )
@@ -27,6 +27,7 @@ class Result extends Component {
 
     return (
       <ScrollView>
+
         <FlatList
           data={result.videos}
           keyExtractor={(item, index) => index}
