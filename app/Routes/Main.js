@@ -13,7 +13,7 @@ const AppNavigator = createStackNavigator({
     initialRouteName: 'Home',
     gesturesEnabled: false,
     defaultNavigationOptions: {
-      headerTitle: ('RedTube Labs'),
+      headerTitle: ('React Native RedTube'),
       headerStyle: {
         backgroundColor: purple,
       },

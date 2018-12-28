@@ -142,6 +142,7 @@ targetCompatibility = '1.8'
 }
 
 dependencies {
+    compile project(':react-native-webview')
     compile project(':react-native-video')
     compile project(':react-native-gesture-handler')
     implementation fileTree(dir: "libs", include: ["*.jar"])
